@@ -1,0 +1,3 @@
+Xmessage*baseTranslations:	#override \
+	:<Key>Return: default-exit()
+Xmessage.form.message.Scroll:	WhenNeeded

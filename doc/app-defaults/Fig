@@ -1,0 +1,110 @@
+#include "Fig-mono"
+
+Fig*beNiceToColormap: 			False
+
+Fig.internalborderwidth: 		0
+
+!Fig*highlightThickness: 		1
+
+! Make it look better with neXtaw
+Fig*Scrollbar.shadowWidth:      2
+Fig*Form*Scrollbar.ShadowWidth: 2
+
+!##### Background, Foreground
+
+Fig*canvas.background:	white
+Fig*canvas.foreground:	black
+
+! all other fore/backgrounds not explicitely chosen
+!Fig*foreground:	black
+!Fig*background:	gray85
+
+! widget to turn on/off the balloon messages
+!Fig*msg_form.balloon_toggle*shadowWidth: 2
+!Fig*msg_form.balloon_toggle.topShadowContrast: 	-40	
+!Fig*msg_form.balloon_toggle.bottomShadowContrast: -10
+
+! balloon for current filename window
+Fig.filename_balloon_popup*Label.background:	yellow
+Fig.filename_balloon_popup*Label.foreground:	blue
+
+! balloon for balloon message window
+Fig.toggle_balloon_popup*Label.background:	yellow
+Fig.toggle_balloon_popup*Label.foreground:	blue
+
+!balloon describing drawing/editing mode function
+Fig.mode_balloon_popup*Label.background:	yellow
+Fig.mode_balloon_popup*Label.foreground:	blue
+
+!balloon describing indicator panel function
+Fig.ind_balloon_popup*Label.background:		yellow
+Fig.ind_balloon_popup*Label.foreground:		blue
+
+!balloon describing command panel button function
+Fig.cmd_balloon_popup*Label.background:		yellow
+Fig.cmd_balloon_popup*Label.foreground:		blue
+
+!balloon describing unit function
+Fig.unit_balloon_popup*Label.background:	yellow
+Fig.unit_balloon_popup*Label.foreground:	blue
+
+!balloon describing mouse function
+Fig.mouse_balloon_popup*Label.background:	yellow
+Fig.mouse_balloon_popup*Label.foreground:	blue
+
+!Fig*Text*background: 			linen
+
+! file preview form background (looks like a border)
+!Fig*preview_form.background:		gray70
+
+!Fig*Command*background:			CadetBlue2
+!Fig*button.background: 			CadetBlue2
+!Fig*MenuButton*background: 		CadetBlue2
+!Fig*mixedEdit.background: 		CadetBlue2
+
+!Fig*topruler.background: 		gray95
+!Fig*sideruler.background: 		gray95
+!Fig*List*background: 			gray95
+!Fig*Scrollbar.background: 		gray95
+
+!Fig*cancel.background: 			CadetBlue1
+!Fig*dismiss.background: 		CadetBlue1
+!Fig*button_form.button*background: 	CadetBlue1
+!Fig*commands*background: 		CadetBlue1
+!Fig*horizontal.background: 		CadetBlue1
+
+!Fig*Label.background: 			gray80
+!Fig*ind_box.background:			gray80
+!Fig*button_form.horizontal.background:	gray80
+
+Fig*button_form.update*background:	black
+Fig*button_form.update*foreground:	red
+!Fig*upd_ctrl_form.upd_ctrl_btns*shadowWidth:	2
+
+!##### Shadows
+!Fig*shadowWidth:			2
+!Fig*Label.shadowWidth:			1
+!Fig*horizontal.shadowWidth: 		2
+!Fig*Scrollbar.shadowWidth:		2
+! no shadows for update indicators
+!Fig*button_form.update.shadowWidth:	0
+
+!Fig*topShadowContrast:			40
+!Fig*bottomShadowContrast: 		-90 
+
+!Fig*Label.topShadowContrast: 		-40	
+!Fig*Label.bottomShadowContrast: 	-10
+
+! shadows for color buttons in popup
+!Fig*form*stdForm*stdColor.shadowWidth:	2
+!Fig*form*stdForm*stdColor.topShadowContrast:    -40	
+!Fig*form*stdForm*stdColor.bottomShadowContrast: -10
+
+! shadows for picture types in edit box
+!Fig*pic_type_box.shadowWidth:		0
+
+! use gray shadows for popup color panel from edit popup so 
+! we don't use up all color cells
+
+Fig*color_box*bottomShadowPixel:	gray50
+Fig*color_box*topShadowPixel:		gray80

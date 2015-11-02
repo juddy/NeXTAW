@@ -1,0 +1,67 @@
+$Id: CHANGES,v 1.1.1.1 2003/01/15 15:50:49 ulric Exp $
+
+Changelog for neXtaw version 0.9
+================================
+
+Changes since version 0.8:
+- Scrollbal does not have the drawBorder resource anymore. It was not useful
+  except for xterm (and not very much).
+- A patch from Kevin Ryde fixed a bug in the Scrollbar widget that could lead
+  to a BadPixmap protocol error when such a widget was destroyed.
+- Small patch from Stasinos Konstantopoulos to compile with native HP-UX
+  compiler.
+- Fixed a bug in the MultiSrc widget after a report from Kevin Ryde. An
+  asciiText widget created with XtNinternational True attempts to free the
+  string passed to it in an XtSetValues XtNstring (on the second and
+  subsequent such calls). This was already fixed in XFree86 3.3.5 Xaw but not
+  in Xaw3d 1.5.  It seems that some fixes in Xaw were not propagated to Xaw3d
+  and the other replacement libraries.
+
+Changes since version 0.7:
+- Do not include widec.h in XawI18n.h for Linux (this file does not exist in
+  new distributions with glibc2).  Bug report from Scott Petinga.
+- Moved doc/README.neXtaw to README at top-level to easier access.  Better
+  documentation on compilation.
+- Fixed Imakefiles for standalone compilation.
+
+Changes since version 0.6:
+- Included a new target in Imakefile, "standalone", to make easier to build
+  neXtaw out of the standard X11 build tree.  Added documentation to the
+  README file about compilation.
+- Patch based on input from Daniel Pittman to make the Scrollbar initial delay
+  and repeat rate configurable using X resources.
+- Small cosmetic changes in source code.
+
+Changes since version 0.5.1:
+- Included a patch from Stefan Monnier to fix Xaw3d habit of ignoring
+  XawScrollbarSetThumb requests while dragging the thumb. It also fixes the
+  behavior of preventing the application from moving the thumb past `1.0 -
+  scrollbar.shown'.  Without this patch, Emacs' scrollbar (when using
+  Xaw-style scrollbars) behaves very poorly when reaching the end of the
+  buffer.
+- Restored the original Xaw Text class. This fixes the "crazy scrollbar"
+  problem, but the 3D relief is gone.
+- TextSrc.c was took from the later Xaw
+- Incorporated the Clock widget from the original xclock and added 3D look.
+- neXtaw 0.6 is now based in Xaw3d version 1.5, but includes a newer
+  version of XawIm.c (1998/04/21).  This fixes the installation path of
+  include files and supersedes the patches from neXtaw.diffs.tar.gz
+- Added support to character composition with dead-keys in AsciiSink. A
+  corresponding patch is available for Xaw and Xaw3d too.
+- Changed cursor shape in MultiSink to make it consistent with AsciiSink.
+- Removed MyInsertCursor (merged into the InsertCursor method).
+
+Changes since version 0.5:
+- Text widget bug that manifested in chimera fixed.
+
+Changes since version 0.3:
+- Fixed the text widget bug in ScEd
+- Added a DrawArrows resource to scrollbars
+- Added checkbox and radiobutton styles to toggles
+- Removed the lines that separated menu entries, because they were not 
+  looking the way I wanted. You can bring them back by removing
+  the -DNO_MENU_LINES define in Imakefile and recompiling.
+- Added scrolling for menus that don't fit in the screen, like the
+  one in xfontsel. The code is not very pretty, but hey! We're the only
+  Athena flavor, AFAIK, that can do it!! :-)
+- Added indicators for menuButtons

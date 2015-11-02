@@ -1,0 +1,1 @@
+EXTRA_DIST = 00-README Bitmap Bitmap-color Editres Editres-color Emacs Fig GXditview Ghostview XCalc XClipboard XClock XConsole XFontSel XGrab XLoad XPaint XTerm Xdefaults Xedit Xfd Xgc Xloadimage Xmag Xman Xmessage Xmh Xvidtune

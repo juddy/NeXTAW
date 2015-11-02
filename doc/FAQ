@@ -1,0 +1,59 @@
+$Id: FAQ,v 1.1.1.1 2003/01/15 15:50:49 ulric Exp $
+
+This FAQ is probably outdated, but I could not work to fix it yet.
+
+	-- Casantos
+
+
+[1] I've compiled neXtaw without problems, moved it to /usr/X11/lib,
+changed symlinks from libXaw* to libneXtaw.so.6.0 but when I try to run 
+someapp, I get a "someapp: can't find library 'libXaw.so.6'" message.
+
+Look at README.neXtaw and see step 4 of the compilation instructions.
+
+OR
+
+Relink your applications with -lneXtaw instead of -lXaw
+
+
+[2] I've installed neXtaw correctly, but I can't get it to look 
+like your screen shots.
+
+Append Xdefaults to your .Xdefaults or .xsession, then run
+xrdb ~/.Xdefaults
+
+Also look at question 3.
+
+
+[3] I have configured .Xdefaults with the correct settings, but
+when I run xterm/kterm/color_xterm/nxterm the scrollbar color does 
+not have the right color, or scrollbar appears black (or white) when
+it should be gray.
+
+Are you running xterm with arguments like  ``xterm -bg black -fg white -sb'' ?
+If so, don't exec xterm with ``-bg black -fg white''. If you want your
+xterm background to have a different color than the default, edit
+.Xdefaults and add:
+*VT100.background:	black
+*VT100.foreground:	white
+
+then run xterm without any color parameters. 
+The same thing applies to most other applications.
+
+[4] Appending the included Xdefaults file or changing .Xdefaults have 
+no effect.
+
+Try modifying .xsession instead of .Xdefaults
+Also see if the app you're trying to change is dynamically linked to libXaw.
+Some apps that come with RedHat are statically linked, which means you
+have to get/compile a dynamically linked version of that app.
+You can see if that's the case by typing something like:
+
+ldd /usr/X11R6/bin/xterm
+
+If a line like:
+   libXaw.so.6 => /usr/X11R6/lib/libXaw.so.6
+does not appears, then you have a statically linked version.
+
+
+

@@ -1,0 +1,92 @@
+
+030915	Toggle again: the check mark displayed in the wrong place
+	when the widget wasn't its default height.
+	Added code to the Command Redisplay function so it doesn't
+	shift the text when the widget is a Toggle in check or radio
+	style. That's really ugly because we're depending
+	on how the widget is subclassed. But it works.
+
+030913	The new highlighting code broke with the Toggle widget
+	in radio or check style.
+
+030912	Fixed function prototypes in Toggle.c and fixed bugs
+	caused by not having them in the first place.
+
+030903	Eliminated warnings caused by missing #includes.
+
+030902	Scrollbar: Added XtNarrowStyle resource to make arrows in the
+	style of Windows ("win95") or NeXt ("next", default).
+	UPDATE: This was later backed out.
+
+030902	Scrollbar: Made the bump on the thumb optional (resource
+	XtNdrawBump, default True).
+
+030901	ThreeD: Added XtNbevel resource to make the bevel "solid"
+	(Motif/Xaw3d-like) or "rounded" (neXtaw, default).
+	Added the same code to neXtawDrawShadowBox in Misc.c, which
+	is used by Scrollbar and SimpleMenu.
+	Added a 3D bevel to Text using a similar hack as in Xaw95.
+
+030831	Command, Repeater and Toggle: Draw a dotted rectangle around
+	the highlighted widget. Reduced the distance the text shifts
+	in a set widget to 1 pixel.
+
+030824	Added traversal code from Ed Falk's XawM. Note: KDE messes up
+	translations for the Command widget. That is a bug in KDE.
+
+030823	Released 0.14.1.
+
+030823	Patch from Alexey I. Froloff <raorn@altlinux.ru>:
+	This patch adds shadow width to SimpleMenu widget's height
+	(last Sme overlaps with bottom shadow) and fixes SmeBSB drawing
+	code (different regions were highlighted in Redisplay and
+	FlipColors, "disabled" menu items were displayed as normal if
+	.international is set to True).
+
+030227	Updated selection code in Text widget. Removed support for
+	cut buffers. Added support for CLIPBOARD. Changed keybindings:
+	Ctrl-C = copy selection to clipboard
+	Ctrl-X = cut selection to clipboard
+	Ctrl-V = paste clipboard
+	Page_Up = page up
+	Page_Down = page down
+	Home = beginning of line
+	Ctrl-Home = beginning of file
+	End = end of line
+	Ctrl-End = end of file
+	New configuration option --enable-obsolete-selections reverts
+	to the old code.
+
+030204	Check for the existence of widec.h (c/o Matthias Buelow).
+
+030115	Patches by Alexey I. Froloff:
+	"NeXtish" scrollbar look (thumb and buttons are wider and
+	look more flat).
+	Fixed thumb positioning for Button2 scrolling.
+	Released 0.13.0.
+
+020828	Added scrollwheel support and a fix for horizontal scrollbars.
+	Changed default beNiceToColormap to False.
+
+020314	More fixes by Andreas Voegele: a patch to acinclude.m4
+	to add -DNARROWPROTO only for systems that need it.
+	Released 0.12.
+
+020126	Added -DNARROWPROTO and a bunch of Makefile fixes by
+	Andreas Voegele <voegelas@users.sourceforge.net>.
+	Released 0.11.
+
+020104  Added checks for wslen, wscpy and wsncpy in XawI18n.h.
+	Fixed neXtclock Makefile.am so it works with the new libtool.
+
+011220	Updated automake, autoconf and libtool.
+
+011213	Released 0.10.
+
+011212	Tested on Linux and Solaris.
+
+011211	Most (relevant) compiler warnings were fixed.
+
+011210	Converted to autoconf.
+	Directory structure was reorganised.
+

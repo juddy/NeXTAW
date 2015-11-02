@@ -1,0 +1,27 @@
+! $XConsortium: XConsole.ad,v 1.3 94/02/09 19:44:01 gildea Exp $
+*allowShellResize:		true
+
+XConsole.notify:		true
+XConsole.verbose:		true
+XConsole.exitOnFail:		true
+XConsole.geometry:		564x140-5-28
+XConsole.translations:		#override\
+	<MapNotify>:		Deiconified()	\n\
+	<UnmapNotify>:		Iconified()	\n\
+	<Message>WM_PROTOCOLS:	Quit()
+XConsole.baseTranslations:	#override\
+	<MapNotify>:		Deiconified()	\n\
+	<UnmapNotify>:		Iconified()	\n\
+	<Message>WM_PROTOCOLS:	Quit()
+XConsole.text.translations:	#override\
+	Ctrl<KeyPress>C:	Clear()	\n\
+	<KeyPress>Clear:	Clear()
+XConsole.text.scrollVertical:	whenNeeded
+XConsole.text.scrollHorizontal:	whenNeeded
+XConsole.text.textSink.font:	-*-courier-medium-r-*-*-*-120-*-*-*-*-*-*
+XConsole.text.editType:		read
+XConsole.text.scrollVertical:	always
+
+! For neXtaw:
+XConsole*Scrollbar.alwaysVisible:	True
+XConsole*Scrollbar.drawArrows:		True

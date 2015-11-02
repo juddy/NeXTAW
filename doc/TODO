@@ -1,0 +1,12 @@
+$Id: TODO,v 1.1.1.1 2003/01/15 15:50:49 ulric Exp $
+
+To-do list for neXtaw version 0.9
+=================================
+
+- Lots of bug fixing and code cleaning.
+- Complete the 3D-fication of the remaining classes.
+- Add a menu bar and cascaded pull-down menus.
+- Add a combo-box widget.
+- Make Toggle set borderWidth to zero when mode is radio or check
+
+- Improve the to-do list :-).

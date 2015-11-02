@@ -1,0 +1,224 @@
+
+
+                             neXtaw 0.13.0
+                Athena Widgets with N*XTSTEP appearance
+               
+                           Alfredo K. Kojima
+                         <kojima@inf.ufrgs.br>
+
+                        Carlos A. M. dos Santos
+                        <casantos@inf.ufrgs.br>
+
+                            Ulric Eriksson
+                           <ulric@siag.nu>
+
+1. INTRODUCTION
+
+This is neXtaw, a modified version of the Athena Widgets with N*XTSTEP
+appearance. It is based on the Xaw3d 1.5 library by Kaleb S. Keithley.
+
+This is not a magic library which will beautify all your apps instantly.
+But with some .Xdefaults fiddling you can make Athena applications look,
+and sometimes behave, much better.
+
+You can make Athena based applications use it by the following ways:
+
+   o  Just replace libXaw.* or libXaw3d.* with libneXtaw.so.?.? and
+      make all symlinks that were pointing to libXaw point to
+      libneXtaw
+      ===> Note that this may not work in some cases. <===
+
+   o  Relink the applications changing -lXaw to -lneXtaw (preferable, but
+      not ever feasible).  So you can still have the old libXaw and use it
+      with some app that doesn't work with neXtaw.
+
+   o  On Linux and Solaris, run the application with LD_PRELOAD set,
+      like this:
+
+	LD_PRELOAD=/usr/X11R6/lib/libneXtaw.so <program>
+
+Features:
+        - N*XTSTEP look alike widgets.
+        - User selectable Toggle appearance (old style, checkbutton or
+          radiobutton)
+        - A rough (better than nothing) implementation of auto-scrolling 
+          for menus that don't fit in the screen (like xfontsel). This is
+          definately NOT the better approach, but Xaw lacks a combo-box
+          widget.
+        - Better look
+        - Better feel
+        - Better internationalization support (character composition with
+          dead-keys)
+        - Better interaction with CLIPBOARD selection
+
+Converted Widgets:
+        - ThreeD (3d shadows)
+        - Scrollbar
+        - SimpleMenu
+        - Command
+        - Viewport (stolen from Xaw95)
+        - Toggle
+        - MenuButton
+
+
+2. NEW RESOURCES
+
+*Scrollbar.DrawArrows
+    Whether the arrows in the scrollbars should be drawn or not.
+
+    Default is True.
+
+    example:
+	xvidtune*Scrollbar*DrawArrows: false
+
+*Scrollbar.AlwaysVisible
+    Whether arrow buttons and the slider must always be visible on the
+    scrollbar.
+
+    Default is False.
+
+    example:
+	xedit*Scrollbar*AlwaysVisible: true
+
+*Scrollbar.initialDelay
+    Controls the initial delay of scrolling.
+
+    Default is 300 milliseconds.
+
+    example:
+	xedit*Scrollbar*initialDelay: 250
+
+
+*Scrollbar.repeatDelay
+    Controls the scrolling repeat rate.
+
+    Default is 150 milliseconds.
+
+    example:
+	xedit*Scrollbar*repeatDelay: 50
+
+
+Note that since version 0.9 Scrollbar does not have the `DrawBorder'
+resource anymore.
+
+
+*Toggle.ToggleStyle
+    Toggle widgets now can have different appearances set through ToggleStyle: 
+
+	* simple, for the old style, where all Toggles look exactly like a
+          Command;
+	* check, for checkboxes;
+        * radio, for radiobuttons.
+
+    Default is simple.        
+
+    example:
+        xfontsel*Toggle.ToggleStyle: check
+
+*MenuButton.MenuButtonStyle
+    Menubuttons can have a indicator displayed on the right part of them:
+
+	* simple, for no indicator;
+        * action, for action/command menus;
+        * select, for selection menus.
+
+    Default is simple.
+
+    example:
+        ghostview*MenuButton.MenuButtonStyle: action
+
+
+3. COMPILATION
+
+Starting from version 0.8, neXtaw will compile as a standalone package,
+contrary to Xaw3d that was intended to compile under the standard X Window
+source tree.
+
+Unpack the sources somewhere:
+        cd /usr/src
+        gunzip -c neXtaw-<version>.tar.gz|tar xvf -
+	  cd neXtaw-<version>
+
+	./configure [options]
+	make
+
+To install both the library and the example programs, run:
+	make install
+
+If you want to install only the library, cd to "lib" and run
+	make install
+
+See also INSTALL.
+
+4. CONFIGURATION
+
+There is a set of application-defaults files in the directory
+doc/app-defaults/ that you may wish to use to further customize applications
+to look better with neXtaw by appending them to your .Xdefaults file.
+Pay a special attention to Xdefaults, that you can either append to your
+.Xdefaults file or move to
+
+	<XROOT>/lib/X11/app-defaults/Xdefaults
+
+where <XROOT> is the top-level directory of your X Window installation
+(typically, /usr/X11R6 for XFree86) and set the environment variable
+XENVIRONMENT to point to it.  For example, in my .profile I have a line
+containing
+
+	XENVIRONMENT=/usr/X11R6/lib/X11/app-defaults/Xdefaults
+
+Run "man X" and look in the section "RESOURCES" for extra information on
+resource management and the environment variable XENVIRONMENT.
+
+You can also use editres to find out proper application resource names and
+add them to your Xdefaults and then fiddle with it's values until you get
+what you want. 
+
+
+5. KNOWN BUGS
+
+These are some of the bugs I know about. If you fix some of them, please
+send me a patch.
+
+- Toggles will disappear if you bind a highlight or unhighlight action to it.
+  Therefore don't do that.
+
+- Same for MenuButton indicators.
+
+- MenuButton with indicator does not resize itself properly in some apps.
+
+- Little cosmetic bug in the position of bottom arrow for scrollable menus.
+
+
+6. IF YOU HAVE SOME TROUBLE
+
+    * Read this file, if you haven't yet.
+    * Read the FAQ
+    * Read the sources
+
+As a desperate attitude :-), send e-mail to ulric@siag.nu.  Include a
+detailed description of the problems you are experiencing, the platform you're
+running on (machine, OS, X server vendor and version etc), the program name
+and version that have problems, the neXtaw version, the output of "xrdb
+-query" and a screen shot, if you think it'll help. Please ask for permission
+before you send a screen shot!
+
+
+
+				E a besta, que queria dizer que tinha fome,
+				mostrou  isto com mímica engolindo o Senador
+				e suas teorias.  Metaforicamente, é claro.
+
+						 -- Luis Fernando Veríssimo
+
+
+Note from current maintainer: according to Babelfish, the quote
+above means:
+
+	E crossbow, that wanted to say that it had hunger,
+	showed this with mimic engolindo the Senator
+	and its theories. Metaforicamente, is clearly.
+
+Clearly, indeed.
+
+Ulric Eriksson, ulric@siag.nu

@@ -1,0 +1,476 @@
+# Makefile.in generated automatically by automake 1.5 from Makefile.am.
+
+# Copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001
+# Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+@SET_MAKE@
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+top_builddir = ../..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+INSTALL_HEADER = $(INSTALL_DATA)
+transform = @program_transform_name@
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+host_alias = @host_alias@
+host_triplet = @host@
+AMTAR = @AMTAR@
+AS = @AS@
+AWK = @AWK@
+CC = @CC@
+DEPDIR = @DEPDIR@
+DLLTOOL = @DLLTOOL@
+ECHO = @ECHO@
+EXEEXT = @EXEEXT@
+INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+LIBTOOL = @LIBTOOL@
+LN_S = @LN_S@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+RANLIB = @RANLIB@
+STRIP = @STRIP@
+VERSION = @VERSION@
+X_CFLAGS = @X_CFLAGS@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_LIBS = @X_LIBS@
+X_PRE_LIBS = @X_PRE_LIBS@
+am__include = @am__include@
+am__quote = @am__quote@
+install_sh = @install_sh@
+
+lib_LTLIBRARIES = libneXtaw.la
+
+libneXtaw_la_SOURCES = \
+	AllWidgets.c AsciiSink.c AsciiSrc.c AsciiText.c Box.c \
+	Clock.c Command.c Dialog.c Form.c Grip.c Label.c Layout.c \
+	List.c MenuButton.c Misc.c MultiSink.c MultiSrc.c Paned.c \
+	Panner.c Porthole.c Repeater.c Scrollbar.c Simple.c SimpleMenu.c \
+	Sme.c SmeBSB.c SmeLine.c SmeThreeD.c StripChart.c Text.c \
+	TextAction.c TextPop.c TextSink.c TextSrc.c TextTr.c TextTrOld.c \
+	ThreeD.c \
+	Toggle.c Traversal.c \
+	Tree.c Vendor.c Viewport.c XawI18n.c XawIm.c XawInit.c \
+	sharedlib.c laygram.c laylex.c
+
+
+neXtawincludedir = $(includedir)/X11/neXtaw
+neXtawinclude_HEADERS = \
+	AllWidgets.h AsciiSink.h AsciiSinkP.h AsciiSrc.h AsciiSrcP.h \
+	AsciiText.h AsciiTextP.h Box.h BoxP.h Cardinals.h Clock.h ClockP.h \
+	Command.h CommandP.h Dialog.h DialogP.h Form.h FormP.h \
+	Grip.h GripP.h Label.h LabelP.h Layout.h LayoutP.h List.h ListP.h \
+	MenuButtoP.h MenuButton.h Misc.h MultiSink.h \
+	MultiSinkP.h MultiSrc.h MultiSrcP.h Paned.h PanedP.h \
+	Panner.h PannerP.h Porthole.h PortholeP.h Repeater.h RepeaterP.h \
+	Reports.h Scrollbar.h ScrollbarP.h Simple.h \
+	SimpleMenP.h SimpleMenu.h SimpleP.h Sme.h SmeBSB.h SmeBSBP.h \
+	SmeLine.h SmeLineP.h SmeP.h SmeThreeD.h SmeThreeDP.h \
+	StripCharP.h StripChart.h Text.h TextP.h TextSink.h TextSinkP.h \
+	TextSrc.h TextSrcP.h ThreeD.h ThreeDP.h Toggle.h ToggleP.h \
+	Traversal.h TraversalP.h \
+	Tree.h TreeP.h VendorEP.h Viewport.h ViewportP.h \
+	XawAlloc.h XawI18n.h XawImP.h XawInit.h XawVersion.h laygram.h
+
+
+libneXtaw_la_LDFLAGS = -version-info 15:1:15
+
+INCLUDES = -DUSEGRAY -DNO_MENU_LINES \
+	-DNeedFunctionPrototypes -I$(top_srcdir)
+
+
+EXTRA_DIST = Template.c Template.h TemplateP.h \
+	laygram.y laylex.l
+
+subdir = X11/neXtaw
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+CONFIG_CLEAN_FILES =
+LTLIBRARIES = $(lib_LTLIBRARIES)
+
+libneXtaw_la_LIBADD =
+am_libneXtaw_la_OBJECTS = AllWidgets.lo AsciiSink.lo AsciiSrc.lo \
+	AsciiText.lo Box.lo Clock.lo Command.lo Dialog.lo Form.lo \
+	Grip.lo Label.lo Layout.lo List.lo MenuButton.lo Misc.lo \
+	MultiSink.lo MultiSrc.lo Paned.lo Panner.lo Porthole.lo \
+	Repeater.lo Scrollbar.lo Simple.lo SimpleMenu.lo Sme.lo \
+	SmeBSB.lo SmeLine.lo SmeThreeD.lo StripChart.lo Text.lo \
+	TextAction.lo TextPop.lo TextSink.lo TextSrc.lo TextTr.lo \
+	TextTrOld.lo ThreeD.lo Toggle.lo Traversal.lo Tree.lo Vendor.lo \
+	Viewport.lo XawI18n.lo XawIm.lo XawInit.lo sharedlib.lo \
+	laygram.lo laylex.lo
+libneXtaw_la_OBJECTS = $(am_libneXtaw_la_OBJECTS)
+
+DEFS = @DEFS@
+DEFAULT_INCLUDES =  -I. -I$(srcdir)
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+depcomp = $(SHELL) $(top_srcdir)/depcomp
+@AMDEP_TRUE@DEP_FILES = $(DEPDIR)/AllWidgets.Plo $(DEPDIR)/AsciiSink.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/AsciiSrc.Plo $(DEPDIR)/AsciiText.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/Box.Plo $(DEPDIR)/Clock.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/Command.Plo $(DEPDIR)/Dialog.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/Form.Plo $(DEPDIR)/Grip.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/Label.Plo $(DEPDIR)/Layout.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/List.Plo $(DEPDIR)/MenuButton.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/Misc.Plo $(DEPDIR)/MultiSink.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/MultiSrc.Plo $(DEPDIR)/Paned.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/Panner.Plo $(DEPDIR)/Porthole.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/Repeater.Plo $(DEPDIR)/Scrollbar.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/Simple.Plo $(DEPDIR)/SimpleMenu.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/Sme.Plo $(DEPDIR)/SmeBSB.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/SmeLine.Plo $(DEPDIR)/SmeThreeD.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/StripChart.Plo $(DEPDIR)/Text.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/TextAction.Plo $(DEPDIR)/TextPop.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/TextSink.Plo $(DEPDIR)/TextSrc.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/TextTr.Plo $(DEPDIR)/TextTrOld.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/ThreeD.Plo $(DEPDIR)/Toggle.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/Traversal.Plo $(DEPDIR)/Tree.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/Vendor.Plo $(DEPDIR)/Viewport.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/XawI18n.Plo $(DEPDIR)/XawIm.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/XawInit.Plo $(DEPDIR)/laygram.Plo \
+@AMDEP_TRUE@	$(DEPDIR)/laylex.Plo $(DEPDIR)/sharedlib.Plo
+COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
+	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) \
+	$(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+CCLD = $(CC)
+LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+	$(AM_LDFLAGS) $(LDFLAGS) -o $@
+CFLAGS = @CFLAGS@
+DIST_SOURCES = $(libneXtaw_la_SOURCES)
+HEADERS = $(neXtawinclude_HEADERS)
+
+DIST_COMMON = $(neXtawinclude_HEADERS) Makefile.am Makefile.in
+SOURCES = $(libneXtaw_la_SOURCES)
+
+all: all-am
+
+.SUFFIXES:
+.SUFFIXES: .c .lo .o .obj
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+	-rm -f libtool
+$(srcdir)/Makefile.in:  Makefile.am  $(top_srcdir)/configure.in $(ACLOCAL_M4)
+	cd $(top_srcdir) && \
+	  $(AUTOMAKE) --gnu  X11/neXtaw/Makefile
+Makefile:  $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) && \
+	  CONFIG_HEADERS= CONFIG_LINKS= \
+	  CONFIG_FILES=$(subdir)/$@ $(SHELL) ./config.status
+install-libLTLIBRARIES: $(lib_LTLIBRARIES)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(libdir)
+	@list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo " $(LIBTOOL) --mode=install $(INSTALL) $(INSTALL_STRIP_FLAG) $$p $(DESTDIR)$(libdir)/$$p"; \
+	    $(LIBTOOL) --mode=install $(INSTALL) $(INSTALL_STRIP_FLAG) $$p $(DESTDIR)$(libdir)/$$p; \
+	  else :; fi; \
+	done
+
+uninstall-libLTLIBRARIES:
+	@$(NORMAL_UNINSTALL)
+	@list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	  echo " $(LIBTOOL) --mode=uninstall rm -f $(DESTDIR)$(libdir)/$$p"; \
+	  $(LIBTOOL) --mode=uninstall rm -f $(DESTDIR)$(libdir)/$$p; \
+	done
+
+clean-libLTLIBRARIES:
+	-test -z "$(lib_LTLIBRARIES)" || rm -f $(lib_LTLIBRARIES)
+libneXtaw.la: $(libneXtaw_la_OBJECTS) $(libneXtaw_la_DEPENDENCIES) 
+	$(LINK) -rpath $(libdir) $(libneXtaw_la_LDFLAGS) $(libneXtaw_la_OBJECTS) $(libneXtaw_la_LIBADD) $(LIBS)
+
+mostlyclean-compile:
+	-rm -f *.$(OBJEXT) core *.core
+
+distclean-compile:
+	-rm -f *.tab.c
+
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/AllWidgets.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/AsciiSink.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/AsciiSrc.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/AsciiText.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Box.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Clock.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Command.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Dialog.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Form.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Grip.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Label.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Layout.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/List.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/MenuButton.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Misc.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/MultiSink.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/MultiSrc.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Paned.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Panner.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Porthole.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Repeater.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Scrollbar.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Simple.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/SimpleMenu.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Sme.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/SmeBSB.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/SmeLine.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/SmeThreeD.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/StripChart.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Text.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/TextAction.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/TextPop.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/TextSink.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/TextSrc.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/TextTr.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/TextTrOld.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/ThreeD.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Toggle.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Traversal.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Tree.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Vendor.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/Viewport.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/XawI18n.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/XawIm.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/XawInit.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/laygram.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/laylex.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/sharedlib.Plo@am__quote@
+
+distclean-depend:
+	-rm -rf $(DEPDIR)
+
+.c.o:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Po' tmpdepfile='$(DEPDIR)/$*.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(COMPILE) -c `test -f $< || echo '$(srcdir)/'`$<
+
+.c.obj:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Po' tmpdepfile='$(DEPDIR)/$*.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(COMPILE) -c `cygpath -w $<`
+
+.c.lo:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Plo' tmpdepfile='$(DEPDIR)/$*.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LTCOMPILE) -c -o $@ `test -f $< || echo '$(srcdir)/'`$<
+CCDEPMODE = @CCDEPMODE@
+uninstall-info-am:
+install-neXtawincludeHEADERS: $(neXtawinclude_HEADERS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(neXtawincludedir)
+	@list='$(neXtawinclude_HEADERS)'; for p in $$list; do \
+	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
+	  f="`echo $$p | sed -e 's|^.*/||'`"; \
+	  echo " $(INSTALL_HEADER) $$d$$p $(DESTDIR)$(neXtawincludedir)/$$f"; \
+	  $(INSTALL_HEADER) $$d$$p $(DESTDIR)$(neXtawincludedir)/$$f; \
+	done
+
+uninstall-neXtawincludeHEADERS:
+	@$(NORMAL_UNINSTALL)
+	@list='$(neXtawinclude_HEADERS)'; for p in $$list; do \
+	  f="`echo $$p | sed -e 's|^.*/||'`"; \
+	  echo " rm -f $(DESTDIR)$(neXtawincludedir)/$$f"; \
+	  rm -f $(DESTDIR)$(neXtawincludedir)/$$f; \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	mkid -fID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) \
+		$(TAGS_FILES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || etags $(ETAGS_ARGS) $$tags  $$unique $(LISP)
+
+GTAGS:
+	here=`CDPATH=: && cd $(top_builddir) && pwd` \
+	  && cd $(top_srcdir) \
+	  && gtags -i $(GTAGS_ARGS) $$here
+
+distclean-tags:
+	-rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH
+
+DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+
+top_distdir = ../..
+distdir = $(top_distdir)/$(PACKAGE)-$(VERSION)
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  if test -f $$file; then d=.; else d=$(srcdir); fi; \
+	  dir=`echo "$$file" | sed -e 's,/[^/]*$$,,'`; \
+	  if test "$$dir" != "$$file" && test "$$dir" != "."; then \
+	    $(mkinstalldirs) "$(distdir)/$$dir"; \
+	  fi; \
+	  if test -d $$d/$$file; then \
+	    cp -pR $$d/$$file $(distdir) \
+	    || exit 1; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || cp -p $$d/$$file $(distdir)/$$file \
+	    || exit 1; \
+	  fi; \
+	done
+check-am: all-am
+check: check-am
+all-am: Makefile $(LTLIBRARIES) $(HEADERS)
+
+installdirs:
+	$(mkinstalldirs) $(DESTDIR)$(libdir) $(DESTDIR)$(neXtawincludedir)
+
+install: install-am
+install-exec: install-exec-am
+install-data: install-data-am
+uninstall: uninstall-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+
+installcheck: installcheck-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
+	  `test -z '$(STRIP)' || \
+	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES) stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+	@echo "This command is intended for maintainers to use"
+	@echo "it deletes files that may require special tools to rebuild."
+clean: clean-am
+
+clean-am: clean-generic clean-libLTLIBRARIES clean-libtool \
+	mostlyclean-am
+
+distclean: distclean-am
+
+distclean-am: clean-am distclean-compile distclean-depend \
+	distclean-generic distclean-libtool distclean-tags
+
+dvi: dvi-am
+
+dvi-am:
+
+info: info-am
+
+info-am:
+
+install-data-am: install-neXtawincludeHEADERS
+
+install-exec-am: install-libLTLIBRARIES
+
+install-info: install-info-am
+
+install-man:
+
+installcheck-am:
+
+maintainer-clean: maintainer-clean-am
+
+maintainer-clean-am: distclean-am maintainer-clean-generic
+
+mostlyclean: mostlyclean-am
+
+mostlyclean-am: mostlyclean-compile mostlyclean-generic \
+	mostlyclean-libtool
+
+uninstall-am: uninstall-info-am uninstall-libLTLIBRARIES \
+	uninstall-neXtawincludeHEADERS
+
+.PHONY: GTAGS all all-am check check-am clean clean-generic \
+	clean-libLTLIBRARIES clean-libtool distclean distclean-compile \
+	distclean-depend distclean-generic distclean-libtool \
+	distclean-tags distdir dvi dvi-am info info-am install \
+	install-am install-data install-data-am install-exec \
+	install-exec-am install-info install-info-am \
+	install-libLTLIBRARIES install-man install-neXtawincludeHEADERS \
+	install-strip installcheck installcheck-am installdirs \
+	maintainer-clean maintainer-clean-generic mostlyclean \
+	mostlyclean-compile mostlyclean-generic mostlyclean-libtool \
+	tags uninstall uninstall-am uninstall-info-am \
+	uninstall-libLTLIBRARIES uninstall-neXtawincludeHEADERS
+
+
+laygram.c : laygram.y
+	$(YACC) -d laygram.y
+	sed 's/yy/LayYY/g' y.tab.c > laygram.c
+	sed 's/yy/LayYY/g' y.tab.h > laygram.h
+	$(RM) y.tab.c y.tab.h
+
+laylex.c : laylex.l
+	$(LEX) laylex.l
+	sed 's/yy/LayYY/g' lex.yy.c > laylex.c
+	$(RM) lex.yy.c
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:

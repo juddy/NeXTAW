@@ -1,0 +1,3 @@
+XClock.input: false
+XClock*translations:	#override\
+	<KeyPress>q:	quit()

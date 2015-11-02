@@ -1,0 +1,347 @@
+!$Id: XPaint,v 1.1.1.1 2003/01/15 15:50:49 ulric Exp $
+
+
+XPaint*paint.undoSize:		1
+
+*ok.label:			Ok
+*cancel.label:			Cancel
+*close.label:			Close
+*apply.label:			Apply
+*Toggle.translations:		<BtnDown>,<BtnUp>: set() notify()
+*alert.title:			Alert
+
+! Resources to be used with neXtaw
+*filebrowser*Form*Toggle*ToggleStyle: radio
+*filebrowser*Form*Toggle.borderWidth: 0
+
+Canvas*fatbits.title:			Fat Bits
+Canvas*fatbits.iconName:		Fat Bits
+Canvas*fatbits*done.label:		Done
+
+!
+! paint.zoom must equal the value on button3
+! No zoom value must exceed MAXZOOM
+!
+Canvas*fatbits*paint.zoom:		6
+Canvas*fatbits*zoomButton1.label:	1:2
+Canvas*fatbits*zoomButton2.label:	1:4
+Canvas*fatbits*zoomButton3.label:	1:6
+Canvas*fatbits*zoomButton4.label:	1:8
+Canvas*fatbits*zoomButton5.label:	1:16
+
+XPaint*fontSelect.title:		Browse and Select a Font
+XPaint*fontSelect.iconName:		Font Browser
+XPaint*fontSelect*text.width:		600
+XPaint*fontSelect*text.height:		60
+XPaint*fontSelect*apply.label:		Apply
+XPaint*fontSelect*done.label:		Close
+XPaint*fontSelect*spacingLabel.label:	Spacing
+XPaint*fontSelect*familyLabel.label:	Font Family
+XPaint*fontSelect*weightLabel.label:	Weight/Style
+XPaint*fontSelect*pointLabel.label:	Point Size:
+XPaint*fontSelect*fontNameLabel.label:	Selection:
+XPaint*fontSelect*fontName.width:	450
+XPaint*fontSelect*List.translations:	<Btn1Down>: Set() Notify()
+XPaint*fontSelect*vport.height:		310
+
+Canvas*pattern.title:			Pattern Editor
+Canvas*pattern*paint.zoom:		6
+Canvas*pattern*file*read.label:		Load
+Canvas*pattern*file*save.label:		Save As...
+Canvas*pattern*file*close.label:	Close
+Canvas*pattern*lookup.label:		Lookup
+Canvas*pattern*grab.label:		Grab
+Canvas*pattern*size.label:		Size
+Canvas*pattern*size*other.label:		Select...
+Canvas*pattern*image.label:		Image
+Canvas*pattern*image*grid.label:		Visible Grid
+Canvas*pattern*help.label:		Help
+Canvas*pattern*help*help.label:			Help...
+Canvas*pattern*viewport*Scrollbar.thickness: 14
+
+!
+! The top level operation/toolbox menu
+!
+XPaint*toolbox.width:			300
+XPaint*toolbox.height:			424
+XPaint*toolbox.menu.vertDistance:	0
+XPaint*toolbox*file.label:		File
+XPaint*toolbox*file*new.label:		New Canvas
+XPaint*toolbox*file*new-size.label:	New With Size...
+XPaint*toolbox*file*open.label:		Open...
+XPaint*toolbox*file*load-clip.label:	Load Clipboard...
+XPaint*toolbox*file*about.label:	About...
+XPaint*toolbox*file*quit.label:		Quit
+XPaint*toolbox*line.label:		Line
+XPaint*toolbox*line*select.label:	Select...
+XPaint*toolbox*other.label:		Brush
+XPaint*toolbox*other*brushSelect.label:	Select Brush Style
+XPaint*toolbox*other*sprayEdit.label:	Edit Spray Pattern
+XPaint*toolbox*font.label:		Font
+XPaint*toolbox*font*select.label:	Browser...
+XPaint*toolbox*help.label:		Help
+XPaint*toolbox*help*about.label:	About...
+XPaint*toolbox*help*help.label:		Help...
+
+!
+!Operation popup menus
+!
+
+XPaint*toolbox*brush.popup-menu.label:		Brush
+XPaint*toolbox*brush.popup-menu.select.label:	Select Brush...
+XPaint*toolbox*brush.popup-menu.parms.label:	Set Parameters...
+XPaint*toolbox*erase.popup-menu.label:		Erase
+XPaint*toolbox*erase.popup-menu.original.label:	Original
+XPaint*toolbox*erase.popup-menu.select.label:	Select Brush...
+XPaint*toolbox*dynpencil.popup-menu.label:	DynPencil
+XPaint*toolbox*dynpencil.popup-menu.autofinish.label:	AutoFinish
+XPaint*toolbox*dynpencil.popup-menu.select.label:	Parameters...
+XPaint*toolbox*spray.popup-menu.label:		Spray
+XPaint*toolbox*spray.popup-menu.gauss.label:	Gauss
+XPaint*toolbox*spray.popup-menu.select.label:	Set Parameters...
+XPaint*toolbox*smear.popup-menu.label:		Smear
+XPaint*toolbox*smear.popup-menu.select.label:	Select Brush...
+XPaint*toolbox*pencil.popup-menu.label:		Pencil
+XPaint*toolbox*dotPencil.popup-menu.label:	Dot Pencil
+XPaint*toolbox*line.popup-menu.label:		Line
+XPaint*toolbox*ray.popup-menu.label:		Ray
+XPaint*toolbox*arc.popup-menu.label:		Arc
+XPaint*toolbox*fill.popup-menu.label:		Fill
+XPaint*toolbox*tfill.popup-menu.label:		Gradient Fill
+XPaint*toolbox*tfill.popup-menu.parms.label:	Set Parameters...
+XPaint*toolbox*ffill.popup-menu.label:		Fractal Fill
+!Next 3 lines are common for all fill operators
+XPaint*toolbox*popup-menu.fill.label:		Fill
+XPaint*toolbox*popup-menu.change.label:		Change
+XPaint*toolbox*popup-menu.fill_range.label:	Fill Range
+XPaint*toolbox*text.popup-menu.label:		Text
+XPaint*toolbox*text.popup-menu.select.label:	Select Font...
+XPaint*toolbox*selectBox.popup-menu.label:	Select Box/Ellipse
+XPaint*toolbox*Lasso.popup-menu.label:		Lasso
+XPaint*toolbox*selectPoly.popup-menu.label:	Select Polygon
+!Next 3 lines are common for all select operators
+XPaint*toolbox*popup-menu.shape.label:		All Colors
+XPaint*toolbox*popup-menu.not_color.label:	Omit Color Range
+XPaint*toolbox*popup-menu.only_color.label:	Only Color Range
+!Next line is common for all fill and select operators 
+XPaint*toolbox*popup-menu.select.label:		Select Range...
+XPaint*toolbox*box.popup-menu.label:		Box
+XPaint*toolbox*fBox.popup-menu.label:		Filled Box
+XPaint*toolbox*oval.popup-menu.label:		Oval
+XPaint*toolbox*fOval.popup-menu.label:		Filled Oval
+XPaint*toolbox*cLine.popup-menu.label:		Connected Line
+XPaint*toolbox*polygon.popup-menu.label:	Polygon
+XPaint*toolbox*fPolygon.popup-menu.label:	Filled Polygon
+XPaint*toolbox*freehand.popup-menu.label:	Shape
+XPaint*toolbox*fFreehand.popup-menu.label:	Filled Shape
+
+
+
+!
+! Editor area menu pulldowns
+!
+Canvas*menu*file.label:		File
+Canvas*menu*file*save.label:		Save
+Canvas*menu*file*saveas.label:		Save As...
+Canvas*menu*file*saveregion.label:	Save Region...
+Canvas*menu*file*revert.label:		Revert...
+Canvas*menu*file*close.label:		Close
+Canvas*menu*file*saveconfig.label:	Save Palette...
+Canvas*menu*file*loadconfig.label:	Load Palette...
+
+Canvas*menu*edit.label:		Edit
+Canvas*menu*edit*undo.label:		Undo
+Canvas*menu*edit*redo.label:		Redo
+Canvas*menu*edit*cut.label:		Cut
+Canvas*menu*edit*copy.label:		Copy
+Canvas*menu*edit*paste.label:		Paste
+Canvas*menu*edit*clear.label:		Clear
+Canvas*menu*edit*dup.label:		Duplicate
+Canvas*menu*edit*all.label:		Select All
+
+Canvas*menu*region.label:	Region
+Canvas*menu*region*flipX.label:		Flip X Axis
+Canvas*menu*region*flipY.label:		Flip Y Axis
+Canvas*menu*region*rotateTo.label:	Rotate By
+Canvas*menu*region-rotateTo-right*rotate1.label:	+90
+Canvas*menu*region-rotateTo-right*rotate2.label:	+45
+Canvas*menu*region-rotateTo-right*rotate3.label:	-45
+Canvas*menu*region-rotateTo-right*rotate4.label:	-90
+Canvas*menu*region-rotateTo-right*rotate5.label:	+180
+Canvas*menu*region*rotate.label:	Rotate...
+Canvas*menu*region*crop.label:	Crop to Region...
+Canvas*menu*region*nudge.label:	Nudge Box...
+Canvas*menu*region*reset.label:	Reset
+
+Canvas*menu*filter.label:	Filter
+Canvas*menu*filter*invert.label:	Invert
+Canvas*menu*filter*sharpen.label:	Sharpen
+Canvas*menu*filter*smooth.label:	Smooth...
+Canvas*menu*filter*edge.label:		Edge Detect
+Canvas*menu*filter*oil.label:		Oil Paint...
+Canvas*menu*filter*noise.label:		Add Noise...
+Canvas*menu*filter*blend.label:		Blend
+Canvas*menu*filter*spread.label:	Spread...
+Canvas*menu*filter*pixelize.label:	Pixelize...
+Canvas*menu*filter*emboss.label:	Emboss
+Canvas*menu*filter*despeckle.label:	Despeckle...
+Canvas*menu*filter*contrast.label:	Normalize Contrast...
+Canvas*menu*filter*solarize.label:	Solarize...
+Canvas*menu*filter*quantize.label:	Quantize Colors...
+Canvas*menu*filter*togrey.label:	Turn into Greyscale
+Canvas*menu*filter*dirfilt.label:	Directional Smooth
+Canvas*menu*filter*last.label:		Repeat Last
+
+Canvas*menu*other.label:	Image
+Canvas*menu*other*grid.label:		Visible Grid
+Canvas*menu*other*snap.label:		Snap
+Canvas*menu*other*fatbits.label:	Fat Bits
+Canvas*menu*other*snapSpacing.label:	Snap Spacing...
+Canvas*menu*other*background.label:	Change Background...
+Canvas*menu*other*size.label:		Change Size...
+Canvas*menu*other*undosize.label:	Undo Levels...
+Canvas*menu*other*autocrop.label:	Autocrop...
+Canvas*menu*other*zoom.label:		Change Zoom...
+
+Canvas*menu*help.label:		Help
+Canvas*menu*help*help.label:			Help...
+
+Canvas*paintBox.popup-menu.label:		XPaint Canvas
+Canvas*paintBox.popup-menu.undo.label:		Undo
+Canvas*paintBox.popup-menu.redo.label:		Redo
+Canvas*paintBox.popup-menu.cut.label:		Cut
+Canvas*paintBox.popup-menu.copy.label:		Copy
+Canvas*paintBox.popup-menu.paste.label:		Paste
+Canvas*paintBox.popup-menu.clear.label:		Clear
+Canvas*fatBox.popup-menu.label:			XPaint FatBits
+Canvas*fatBox.popup-menu.undo.label:		Undo
+Canvas*fatBox.popup-menu.cut.label:		Cut
+Canvas*fatBox.popup-menu.copy.label:		Copy
+Canvas*fatBox.popup-menu.paste.label:		Paste
+Canvas*fatBox.popup-menu.clear.label:		Clear
+Canvas*patternBox.popup-menu.label:		XPaint Pattern
+Canvas*patternBox.popup-menu.undo.label:	Undo
+Canvas*patternBox.popup-menu.cut.label:		Cut
+Canvas*patternBox.popup-menu.copy.label:	Copy
+Canvas*patternBox.popup-menu.paste.label:	Paste
+Canvas*patternBox.popup-menu.clear.label:	Clear
+
+Canvas*patternRackForm*popup-menu.label:	Pattern
+Canvas*patternRackForm*popup-menu.edit.label:	Edit
+Canvas*patternRackForm*popup-menu.remove.label:	Remove
+
+Canvas.pane.form2.min:			100
+
+Canvas.width:					650
+Canvas.height:					712
+Canvas*patternRackForm.width:			280
+Canvas*patternRackForm.height:			120
+Canvas*patternRackForm.primary.label:		Primary Palette
+Canvas*patternRackForm.secondary.label:		Secondary Palette
+Canvas*patternRackForm.vport.height:		100
+Canvas*patternRackForm*patternRack.width:	280
+Canvas*patternRackForm*lookup.label:		Lookup
+
+!
+! Editor area pattern buttons
+!
+Canvas*addSolid.label:			Add\nSolid
+Canvas*addPattern.label:		Add\nPattern
+Canvas*selectRange.label:		Select\nColor\nRange
+Canvas*primaryLabel.label:		Primary
+Canvas*primaryLabel.justify:		left
+Canvas*secondaryLabel.label:		Secondary
+Canvas*secondaryLabel.justify:		left
+
+!
+! Filebrowser defaults
+!
+
+XPaint*filebrowser.title:		File Browser
+XPaint*filebrowser*text.width:		400
+Canvas*filebrowser.title:		File Browser
+Canvas*filebrowser*text.width:		400
+
+XPaint*brush*box.width: 170
+XPaint*brush.title:			Brush Selector
+XPaint*brush.iconName:			Brush Selector
+
+!
+! Color picker
+!
+Canvas*colorPicker*form.Label.width:	50
+Canvas*colorPicker*match.label:		Match
+Canvas*colorPicker*Scrollbar.height:	16
+XPaint*colorPicker*form.Label.width:	50
+XPaint*colorPicker*match.label:		Match
+XPaint*colorPicker*Scrollbar.height:	16
+
+Canvas*chroma.title:			Range Selection
+Canvas*chroma.iconName:			XPaint Chroma 
+Canvas*chroma*varianceLabel.width:	120
+Canvas*chroma*varianceBar.length:	140
+Canvas*chroma*delta.label:		Pixel Delta
+Canvas*chroma*selectModeLabel.label:	Selection Mode
+Canvas*chroma*mode0.label:		All Hues
+Canvas*chroma*mode1.label:		Omit Hue Range
+Canvas*chroma*mode2.label:		Hue Range
+Canvas*chroma*Label.justify:		left
+
+XPaint*popup-dialog-form*label.justify:		left
+Canvas*popup-dialog-form*label.justify: 	left
+
+Canvas*colorEditDialog.title:		Color Selector
+
+XPaint*helpDialog.title:		XPaint Help Browser
+XPaint*helpDialog.iconName:		XPaint Help
+XPaint*helpDialog.form.title.label:	XPaint 2.5.3 Help Information
+XPaint*helpDialog*textTitle.width:	400
+XPaint*helpDialog*textText.width:	400
+XPaint*helpDialog*textText.height:	256
+XPaint*helpDialog*topicPort.height:	280
+XPaint*helpDialog*done.label:		Done
+XPaint*helpDialog*next.label:		Next
+XPaint*helpDialog*prev.label:		Previous
+XPaint*helpDialog*down.label:		Pg Down
+XPaint*helpDialog*up.label:		Pg Up
+
+
+!
+! Black and white resources
+!
+
+!Canvas*background:	white
+!Canvas*foreground:	black
+
+!
+! Test Color resources
+!
+
+!Canvas*background:		rgb:c0/c0/c0
+!Canvas*paint*background:	white
+
+!XPaint*background:		rgb:c0/c0/c0
+!XPaint*foreground:		black
+!XPaint*Box.background:		gray80
+!Canvas*Box.background:		gray80
+
+!XPaint*Toggle.background:	rgb:c0/c0/c0
+!Canvas*Toggle.background:	rgb:c0/c0/c0
+
+!XPaint*Text*background:		rgb:ff/ff/ff
+!XPaint*HTML*background:		rgb:ff/ff/ff
+!Canvas*Text*background:		rgb:ff/ff/ff
+
+!XPaint*filebrowser*Label.background:	gray80
+!XPaint*filebrowser*Toggle.background:	white
+!XPaint*filebrowser*name*background:	white
+!XPaint*filebrowser*title.background:	rgb:c0/c0/c0
+!Canvas*filebrowser*Label.background:	gray80
+!Canvas*filebrowser*Toggle.background:	white
+!Canvas*filebrowser*name*background:	white
+!Canvas*filebrowser*title.background:	rgb:c0/c0/c0
+
+!XPaint*Command.background:		white
+!Canvas*Command.background:		white
+
+!Canvas.pane.background:			black

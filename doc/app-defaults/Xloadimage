@@ -1,0 +1,19 @@
+# Sample .xloadimagerc file
+
+path = /usr/local/images
+extension = .niff             # NIFF image
+            .jpg .jpeg        # JPEG image
+            .gif              # CompuServe GIF image
+            .sun .csun .msun  # sun rasterfile
+            .face             # faces project
+            .xwd              # X window dump
+            .xpm .pm .xbm .bm # X bitmap
+            .fax              # G3 FAX
+            .fbm              # fuzzy bitmap
+            .mac              # macpaint
+            .pbm .pgm .ppm    # PBMPLUS
+            .img              # GEM IMG
+            .pcx              # PCX image
+
+# add uufilter for automatic uudecoding of files ending in .uu or .uue
+filter = "uufilter -s" .uu .uue

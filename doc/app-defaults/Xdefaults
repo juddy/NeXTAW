@@ -1,0 +1,395 @@
+!==============================================================================
+! OpenWindows classes
+!==============================================================================
+
+OpenWindows.Beep:		never
+OpenWindows.DragRightDistance:	100
+OpenWindows.PopupJumpCursor:	True
+OpenWindows.SetInput:		followmouse	
+OpenWindows.FocusToPointer:	True	
+OpenWindows.WorkspaceColor:	Aquamarine4
+OpenWindows.ScrollbarPlacement:	right
+OpenWindows.WindowColor:	rgb:c0/c0/c0
+OpenWindows.MultiClickTimeout:	4
+OpenWindows.IconLocation:	bottom
+OpenWindows.SelectDisplaysMenu:	False
+OpenWindows.MinimalDecor:       xman xbiff xclock xchrom perf
+*numeric:	C
+*displayLang:	C
+*basicLocale:	C
+*timeFormat:	C
+*inputLang:	C
+
+!==============================================================================
+! General resources
+!==============================================================================
+
+!*background:		rgb:c0/c0/c0
+*beNiceToColormap:	False
+*shapeStyle:		Rectangle
+!*shapeStyle:		Ellipse
+!*shapeStyle:		RoundedRectangle
+!*topShadowContrast:	20
+!*bottomShadowContrast:	20
+
+!==============================================================================
+! Motif widgets and gadgets
+!==============================================================================
+
+! Text and List fonts should always be monospaced or cell fonts.
+*XmText.fontList:		-b&h-lucidatypewriter-medium-r-normal-*-*-120-*-*-m-*-*-*
+*XmTextField.fontList:		-b&h-lucidatypewriter-medium-r-normal-*-*-120-*-*-m-*-*-*
+*XmList.fontList:		-b&h-lucidatypewriter-medium-r-normal-*-*-120-*-*-m-*-*-*
+
+*XmLabel.fontList:		-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*XmLabelGadget.fontList:	-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*XmRowColumn*fontList:		-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*XmPushButton.fontList: 	-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*XmPushButtonGadget.fontList:	-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+
+*XmList.background:			White
+*XmText.background:			White
+*XmTextField.background:		White
+*XmScrollBar.background:		rgb:c0/c0/c0
+*XmSash.traversalOn:			False
+*XmDialogShell*highlightThickness:	2
+*XmDialogShell*navigationType:		TAB_GROUP
+
+!==============================================================================
+! Lucid widgets (used by XEmacs and GNU FSF Emacs)
+!==============================================================================
+
+*XlwMenu.font:			-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*XlwMenu.background:		rgb:c0/c0/c0
+*XlwScrollBar*Foreground:	rgb:c0/c0/c0
+*XlwScrollBar*Background:	rgb:b7/b7/b7
+*XlwScrollBar.SliderStyle:	dimple
+*XlwScrollBar.ArrowPosition:	opposite
+
+!==============================================================================
+! Xaw, Xaw3d and derivatives
+!==============================================================================
+
+*ApplicationShell.background:	rgb:c0/c0/c0
+
+*Box.background:		rgb:c0/c0/c0
+
+! xclock has a Clock widget and oclock uses the classname "Clock"
+*Clock.background:		White
+*Clock.font:			-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*Clock.fontSet:			-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*Clock.shadowWidth:		2
+
+*Command.background:		rgb:c0/c0/c0
+*Command.borderWidth:		1
+*Command.font:			-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*Command.fontSet:		-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*Command.highlightThickness:	1
+*Command.shadowWidth:		2
+
+*Composite.background:		rgb:c0/c0/c0
+
+*Constraint.background:		rgb:c0/c0/c0
+
+*Core.background:		rgb:c0/c0/c0
+
+*Dialog.background:		rgb:c0/c0/c0
+
+*Form.background:		rgb:c0/c0/c0
+
+! Grip foreground must be set to the same color as Paned background
+*Grip.foreground:		rgb:c0/c0/c0
+
+*Label.background:		rgb:c0/c0/c0
+*Label.font:			-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*Label.fontSet:			-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*Label.shadowWidth:		0
+
+*Layout.background:		rgb:c0/c0/c0
+
+*List.background:		rgb:c0/c0/c0
+*List.font:			-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*List.fontSet:			-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+
+*MenuButton.background:		rgb:c0/c0/c0
+*MenuButton.borderWidth:	1
+*MenuButton.font:		-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*MenuButton.fontSet:		-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*MenuButton.highlightThickness:	1
+!*MenuButton.leftBitmap:		menu12
+*MenuButton.shadowWidth:	2
+
+*Object.background:		rgb:c0/c0/c0
+
+*OverrideShell.background:	rgb:c0/c0/c0
+
+*Paned.background:		rgb:c0/c0/c0
+
+*Panner.background:		rgb:c0/c0/c0
+
+*Porthole.background:		rgb:c0/c0/c0
+
+*Rect.background:		rgb:c0/c0/c0
+
+*Repeater.background:		rgb:c0/c0/c0
+
+*Shell.background:		rgb:c0/c0/c0
+
+*Scrollbar.background:		rgb:c0/c0/c0
+*Scrollbar.borderWidth:		1
+*Scrollbar.cursorName:		top_left_arrow
+*Scrollbar.shadowWidth:		2
+*Scrollbar.thickness:		18
+*Scrollbar.minimumThumb:	12
+!for neXtaw:
+*Scrollbar*initialDelay:	150
+*Scrollbar*repeatDelay:		50
+
+*Simple.background:		rgb:c0/c0/c0
+
+*SimpleMenu.background:		rgb:c0/c0/c0
+*SimpleMenu.cursor:		right_ptr
+*SimpleMenu.shadowWidth:	2
+*SimpleMenu.menuLabel.font:	-b&h-lucida-bold-r-normal-*-*-120-*-*-p-*-*-*
+*SimpleMenu.menuLabel.fontSet:	-b&h-lucida-bold-r-normal-*-*-120-*-*-p-*-*-*
+
+*Sme.background:		rgb:c0/c0/c0
+*Sme.highlightThickness:	1
+*Sme.shadowWidth:		2
+
+*SmeBSB.background:		rgb:c0/c0/c0
+*SmeBSB.font:			-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*SmeBSB.fontSet:		-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*SmeBSB.highlightThickness:	1
+*SmeBSB.shadowWidth:		2
+
+*SmeLine.background:		rgb:c0/c0/c0
+
+!*SmeThreeD.background:		rgb:b7/b7/b7
+
+*StripChart.background:		rgb:c0/c0/c0
+
+*Text.background:		AntiqueWhite
+*Text.textSink.background:	AntiqueWhite
+*Text.textSink.font:		-b&h-lucidatypewriter-medium-r-normal-*-*-120-*-*-m-*-*-*
+*Text.textSink.fontSet:		-b&h-lucidatypewriter-medium-r-normal-*-*-120-*-*-m-*-*-*
+*Text.search.form.Toggle.toggleStyle: radio
+*Text.translations:	#override \
+	<Key>Home: beginning-of-line() \n\
+	<Key>KP_Home: beginning-of-line() \n\
+	<Key>End: end-of-line() \n\
+	<Key>KP_End: end-of-line() \n\
+	<Key>Delete: delete-next-character() \n\
+	<Key>KP_Delete: delete-next-character() \n\
+	!Ctrl<Key>Left: backward-word() \n\
+	!Ctrl<Key>KP_Left: backward-word() \n\
+	!Ctrl<Key>Right: forward-word() \n\
+	!Ctrl<Key>KP_Right: forward-word() \n\
+
+*ThreeD.background:		rgb:c0/c0/c0
+*Toggle.borderWidth:		1
+*Toggle.background:		rgb:c0/c0/c0
+*Toggle.highlightThickness:	1
+*Toggle.font:			-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*Toggle.fontSet:		-b&h-lucida-medium-r-normal-*-*-120-*-*-p-*-*-*
+*Toggle.shadowWidth:		2
+!*Toggle.toggleStyle:		Radio
+
+*TopLevelShell.background:	rgb:c0/c0/c0
+
+*TransientShell.background:	rgb:c0/c0/c0
+
+*Tree.background:		rgb:c0/c0/c0
+
+*VendorShell.background:	rgb:c0/c0/c0
+
+*Viewport.background:		rgb:c0/c0/c0
+
+*WmShell.background:		rgb:c0/c0/c0
+
+!==============================================================================
+! Netscape Communicator (v. 4.7)
+!==============================================================================
+
+!Netscape*foreground:			rgb:00/00/00
+!Netscape*background:			rgb:c0/c0/c0
+!Netscape*textBackground:		rgb:ff/ff/ff
+
+Netscape.Navigator.geometry: =720x720
+!Netscape.Mail.geometry: =900x720
+Netscape.MailFolder.geometry: =640x480
+Netscape.MailThread.geometry: =900x720
+Netscape.News.geometry: =720x720
+Netscape.Composition.geometry: =720x720
+Netscape.Editor.geometry: =990x720
+!Netscape.Bookmarks.geometry: =720x720
+Netscape.bookmarks.geometry: =720x720
+Netscape.AddressBook.geometry: =720x720
+!Netscape.Download.geometry: =500x200
+
+! Make netscape display special characters (math symbols, dingbats, etc)
+Netscape*documentFonts.charset*adobe-fontspecific:   iso-8859-1
+
+! Don't use dialog boxes 
+Netscape*useStdoutDialog:		False
+Netscape*useStderrDialog:		False
+
+! These resources control the foreground and background colors of text
+! which has been selected with the mouse.
+!Netscape*selectForeground:		rgb:00/00/00
+!Netscape*selectBackground:		rgb:ff/ff/cc
+
+! These resources control the foreground and background colors of normal text.
+!Netscape*defaultForeground:		rgb:00/00/00
+!Netscape*defaultBackground:		rgb:e7/e7/e7
+
+! Colors of the outline lists used in mail and news windows.
+!Netscape*XmLGrid.foreground:		rgb:00/00/00
+!Netscape*XmLGrid.background:		rgb:b7/b7/b7
+!Netscape*XmLGrid.selectBackground:	rgb:ff/ff/cc
+
+! Navigator mouse documentation.
+!Netscape*tipLabel.foreground:		rgb:00/00/00
+!Netscape*tipLabel.background:		rgb:ff/ff/cc
+!Netscape*tipShell.borderColor:		rgb:00/00/00
+!Netscape*tipShell.borderWidth:		1
+
+! For the splash screen
+!Netscape*splashShell*background:	rgb:00/00/00
+!Netscape*splashShell*foreground:	rgb:ff/ff/ff
+
+! doc strings for SwatchMatrix in colorPicker...
+!Netscape*selector*background:		rgb:b7/b7/b7
+
+!Netscape*menuBar.windowMenu.fontList: \
+	-b&h-lucida-bold-i-*-*-*-120-*--*-*-iso8859-*
+Netscape*attachmentProps*XmLabelGadget.fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*AddressBook*mainform.fontList: \
+	-b&h-lucida-bold-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*fontList: \
+	-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+Netscape*XmTextField.fontList: \
+	-b&h-lucidatypewriter-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*XmText.fontList: \
+	-b&h-lucidatypewriter-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*XmList*fontList: \
+	-b&h-lucidatypewriter-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*menuBar*fontList: \
+	-b&h-lucida-bold-i-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*menuBar*fontList: \-*-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+Netscape*menuBar*historyTruncated.fontList: \
+	-b&h-lucida-medium-i-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*popup*fontList: \
+	-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+!Netscape*topArea*fontList: \
+	-b&h-lucida-bold-r-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*topArea*XmTextField.fontList: \
+	-*-courier-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*topArea*XmText.fontList: \
+	-*-courier-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*bookmark*fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*bookmark*fontList: \
+	-b&h-lucida-bold-r-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*bookmark*selectedLabel.fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*bookmark*XmTextField.fontList: \
+	-*-courier-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*bookmark*XmText.fontList: \
+	-*-courier-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*docinfoButton.fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*mailto*urlLabel.fontList: \
+	-b&h-lucida-medium-r-*-*-*-140-*-*-*-*-iso8859-*
+Netscape*licenseDialog*text.fontList: \
+	-b&h-lucidatypewriter-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*XmLGrid*fontList: \
+-b&h-lucida-medium-r-*-*-*-100-*-*-*-*-iso8859-*,\
+-b&h-lucida-bold-r-*-*-*-100-*-*-*-*-iso8859-*=BOLD,\
+-b&h-lucida-medium-i-*-*-*-100-*-*-*-*-iso8859-*=ITALIC
+!Netscape*XmLGrid*fontList: \
+-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*,\
+-b&h-lucida-bold-r-*-*-*-120-*-*-*-*-iso8859-*=BOLD,\
+-b&h-lucida-medium-i-*-*-*-120-*-*-*-*-iso8859-*=ITALIC
+Netscape*banner*folderDropdown*XmLabel.fontList: \
+	-b&h-lucidatypewriter-bold-r-*-*-*-100-*-*-*-*-iso8859-*
+Netscape*banner*folderDropdown*fontList: \
+-b&h-lucidatypewriter-medium-r-*-*-*-100-*-*-*-*-iso8859-*,\
+-b&h-lucidatypewriter-bold-r-*-*-*-100-*-*-*-*-iso8859-*=BOLD
+Netscape*banner*title.fontList: \
+	-b&h-lucida-bold-r-*-*-*-100-*-*-*-*-iso8859-*
+Netscape*banner*subtitle.fontList: \
+	-b&h-lucida-medium-r-*-*-*-100-*-*-*-*-iso8859-*
+Netscape*banner*info.fontList: \
+	-b&h-lucida-medium-r-*-*-*-100-*-*-*-*-iso8859-*
+!Netscape*banner*folderDropdown*XmLabel.fontList: \
+	-b&h-lucidatypewriter-bold-r-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*banner*folderDropdown*.fontList: \
+-b&h-lucidatypewriter-medium-r-*-*-*-120-*-*-*-*-iso8859-*,\
+-b&h-lucidatypewriter-bold-r-*-*-*-120-*-*-*-*-iso8859-*=BOLD
+!Netscape*banner*title.fontList: \
+	-b&h-lucida-bold-r-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*banner*subtitle.fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*banner*info.fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*arrowlabel.fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*attachItemLabel*fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*documentFonts.defaultFont*iso-8859-1.prop:	b&h-lucida-120-noscale
+Netscape*documentFonts.defaultFont*iso-8859-1.fixed:	b&h-lucidatypewriter-100-noscale
+Netscape*tipLabel.fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*prefs*fontList: \
+	-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+Netscape*prefs*pageTitle.fontList: \
+-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*=NORMAL,\
+-b&h-lucida-bold-r-*-*-*-140-*-*-*-*-iso8859-*=BOLD,\
+-b&h-lucida-medium-i-normal-*-*-120-*-*-*-*-iso8859-*=ITALIC
+Netscape*prefs*categoryList*fontList: \
+	-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+Netscape*prefsLang*fontList: \
+	-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+Netscape*prefsApplEdit*fontList: \
+	-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+Netscape*prefsProxiesView*fontList: \
+	-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+Netscape*prefsLdapProp*fontList: \
+	-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+Netscape*subscribeFolder*fontList: \
+	-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+Netscape*serverDialog*fontList: \
+	-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+Netscape*toolBar*fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*dashBoard*statusBar.fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*dashBoard*progressBar.fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*dockedTaskBar*fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*floatingTaskBar*fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*NewsDownload*fontList: \
+	-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+Netscape*splashShell*fontList: \
+	-b&h-lucida-medium-r-normal-*-*-120-*-*-*-*-iso8859-*
+Netscape*spellDialog*text_label.fontList: \
+	-b&h-lucida-bold-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*spellDialog*list_label.fontList: \
+	-b&h-lucida-bold-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*spellDialog*right_rc*fontList: \
+	-b&h-lucida-bold-r-*-*-*-120-*-*-*-*-iso8859-*
+Netscape*spellDialog*combo_frame*fontList: \
+	-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*
+!Netscape*AddressOutlinerPopup*fontList: \
+-b&h-lucida-medium-r-*-*-*-120-*-*-*-*-iso8859-*,\
+-b&h-lucida-bold-r-*-*-*-120-*-*-*-*-iso8859-*=BOLD,\
+-b&h-lucida-medium-i-*-*-*-120-*-*-*-*-iso8859-*=ITALIC
+Netscape*AddressOutlinerPopup*fontList: \
+-b&h-lucida-medium-r-*-*-*-100-*-*-*-*-iso8859-*,\
+-b&h-lucida-bold-r-*-*-*-100-*-*-*-*-iso8859-*=BOLD,\
+-b&h-lucida-medium-i-*-*-*-100-*-*-*-*-iso8859-*=ITALIC
+

@@ -1,0 +1,21 @@
+$Id: 00-README,v 1.1.1.1 2003/01/15 15:50:49 ulric Exp $
+
+These are some app-defaults files that I use with neXtaw an Xaw3d.
+Use them whith care and at your own risk.
+
+If you want to try some of these files without overriding the existing ones,
+copy them to a private directory, say $HOME/app-defaults and set the
+environment variable XUSERFILESEARCHPATH to include the full path:
+
+    for Bourne shell (sh, ksh, zsh, bash, ash):
+
+	XUSERFILESEARCHPATH=$HOME/app-defaults
+	export XUSERFILESEARCHPATH
+
+    for chsh and tcsh:
+
+	setenv XUSERFILESEARCHPATH $HOME/app-defaults
+
+And remenber, make a backup of your old files before install these over them!
+
+--Casantos

@@ -1,0 +1,73 @@
+
+Immediate plans
+---------------
+
+Only show the caret when the Text widget has focus.
+
+---
+
+Text again: fix the caret blinking code, which seems only slightly broken.
+
+---
+
+Make focus policy a resource.
+
+---
+
+Distinguish between pointer focus and keyboard focus.
+
+---
+
+Setting keyboard focus explicitly messes up the focus of
+the keyboard traversal code.
+
+---
+
+Text: Scroll horizontally to keep the caret visible.
+
+---
+
+
+
+Plans for the future
+--------------------
+
+Since neXtaw (and its relatives Xaw3d, XawM and so on) are not exactly
+bleeding edge, there is no rush to implement lots of new
+features. The library is mostly fine as it is, within the limitations
+of the Xaw3d API. The most important thing is to keep the library
+up to date, to prevent bit rot and make sure that it remains useful.
+
+But that would be boring, and we can't have that. Here is, therefore,
+a small wishlist that will be implemented as time and interest permits.
+Anyone is invited to participate, either with these goals or ones
+of your own.
+
+
+More widgets
+------------
+
+There are lots of widgets in Siag Office and other sources that would
+make a useful addition to many applications. See, for example,
+Ed Falk's survey.
+
+Rather than adding them to neXtaw, which would make it incompatible
+with other libraries, they should go into a separate library.
+
+From the top of my head, this includes:
+
+ - The whole menu kit
+ - Combo widget
+ - Tab widget
+ - File selector widget
+ - Text field
+ - Tree widget
+
+
+Features from elsewhere
+-----------------------
+
+ - XawM has keyboard traversal. Done!
+ - XawXpm has amazing eyecandy capability
+ - Aterm has fake background transparency
+
